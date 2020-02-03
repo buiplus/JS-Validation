@@ -1,0 +1,60 @@
+#container{
+    margin: 0 auto;
+    width: 500px;
+    height: 100%;
+    background: rgba(81, 226, 189, 0.93);
+}
+.tab{
+    background: #c4c449;
+    padding: 12px;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#dangnhap{
+    background: #E0D9D9;
+}
+
+a.tab:hover{
+    background: #E0EEEE !important;
+} 
+
+#divdangki{
+   /* width: 500px; */
+    height: 100%;
+    /* background: red; */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#divdangnhap{
+    width: auto;
+    height: 100%;
+    display: none;
+      margin-left: 30px;
+      margin-right: 30px;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+#nutdangki,#nutdangnhap{
+    background: #a3a329;
+    border: 0;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#nutdangki:hover,#nutdangnhap:hover{
+    background: #E0D9D9;
+    cursor: pointer;
+}
+#pthongbao{
+    padding: 20px;
+    background: black;
+    font-style: initial;
+    font-size: 20px;
+    display: none;
+}

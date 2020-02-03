@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="container">
+       <a href="#" id="dangki" class="tab" onclick="onDangKy()">ĐĂNG kÝ</a>
+       <a href="#" id="dangnhap" class="tab" onclick="onDangNhap()">ĐĂNG NHẬP</a>
+    <form action="trangchu.php" id="divdangki" class="divForm" name="form_dk">
+        <h2>đăng kí thành viên</h2>
+        <hr>
+        <div id="thongbao">
+            <p id="pthongbao"></p>
+        </div>
+        <table>
+            <tr>
+                <td>Tên Đăng Nhập: </td>
+                <td><input type="text" id="tendangnhap" name="tendangnhap"></td>
+            </tr>
+            <tr>
+                <td>Mật Khẩu: </td>
+                <td><input type="password" id="mk" name="matkhau"></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" id="email" name="mail"></td>
+            </tr>
+            <tr>
+                <td>Nghề Nghiệp:</td>
+                <td >
+                    <select name="nghenghiep" id="nghenghiep">
+                        <option value="">-Chọn-</option>
+                        <option value="">Lập Trình Viên</option>
+                        <option value="">Giảng Viên</option>
+                        <option value="">Bác Sĩ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tuổi:</td>
+                <td><input type="text" id="tuoi" name="tuoi"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="nam" name="gioitinh">Nam
+                    <input type="radio" id="nu" name="gioitinh">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center"> 
+                    <input type="submit" id="nutdangki" value="ĐĂNG KÝ" onclick="return KiemTraHopLe()">
+                </td>
+            </tr>
+            <tr>
+                 <td colspan="2" style="text-align:center"> 
+                        Bạn có tài khoản chưa ? Vui lòng click <a href="" onclick="onDangNhap()">Đăng Nhập</a>
+                    </td>
+            </tr>
+        </table>
+    </form>
+    
+    <form action="" id="divdangnhap" class="divForm" name="form_dn">
+            <h2>ĐĂNG NHẬP</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td>Tên Đăng Nhập: </td>
+                    <td><input type="text" id="tendangnhap" name="tendangnhap"></td>
+                </tr>
+                <tr>
+                    <td>Mật Khẩu: </td>
+                    <td><input type="password" id="mk" name="matkhau"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center"><input type="checkbox" id="ghinho" name="">Ghi nhớ lần sau</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <a href="">Quên mật khẩu</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center"> 
+                        <input type="submit" id="nutdangnhap" value="ĐĂNG NHẬP">
+                    </td>
+                </tr>
+                <tr>
+                     <td colspan="2" style="text-align:center"> 
+                            Bạn CHƯA CÓ tài khoản chưa ? Vui lòng click <a href="" onclick="onDangKy()">Đăng Ký</a>
+                        </td>
+                </tr>
+    </form>
+   </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
